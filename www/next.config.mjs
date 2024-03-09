@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'standalone',
-    assetPrefix: process.env.PUBLIC_ASSET_URL,
+    assetPrefix: `${process.env.PUBLIC_ASSET_URL}/${process.env.ASSET_HASH}`,
     images: {
         unoptimized: true,
     }/*,

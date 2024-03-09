@@ -39,7 +39,7 @@ phases:
       - npm run-script build
       - ls -la .next
       - ls -la .next/static
-      - export S3_PATH=s3://$SERVICE_NAME-$ENV-$REGION-cloudfront/$ASSET_HASH
+      - export S3_PATH=s3://$SERVICE_NAME-$ENV-$REGION-cloudfront/$ASSET_HASH/_next/static
       - echo $S3_PATH
       - aws s3 cp $CODEBUILD_SRC_DIR/www/.next/static $S3_PATH --recursive  --acl public-read
       - cp run.sh $CODEBUILD_SRC_DIR/www/.next/standalone
