@@ -42,8 +42,9 @@ phases:
       - export S3_PATH=s3://$SERVICE_NAME-$ENV-$REGION-cloudfront/$ASSET_HASH
       - echo $S3_PATH
       - aws s3 cp $CODEBUILD_SRC_DIR/www/.next/static $S3_PATH --recursive  --acl public-read
-      # - zip -r function.zip ./
-      # - aws lambda update-function-code --zip-file fileb://function.zip --function-name splitgpt-com-dev-www
+      - cd $CODEBUILD_SRC_DIR/www/.next/standalone
+      - zip -r function.zip ./
+      - aws lambda update-function-code --zip-file fileb://function.zip --function-name splitgpt-com-$ENV-www
       # - docker build -t $REPOSITORY_URI:$ENV .
       # - docker tag $REPOSITORY_URI:$ENV $REPOSITORY_URI:$ENV
       # - docker push $REPOSITORY_URI:$ENV
