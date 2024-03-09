@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     experimental: {
-        outputFileTracingIgnores: [
-            // '**canvas**',
-            '**swc/core**'
-        ],
+        outputFileTracingExcludes: {
+           '*': ['**swc/core**']
+        },
     },
 };
 
