@@ -1,5 +1,6 @@
 import Link from 'next/link'
-
+import Image from "next/image";
+import Logo from '@/public/images/SchematicalSticker.png'
 export default function Header({ nav = true }: {
   nav?: boolean
 }) {
@@ -11,7 +12,7 @@ export default function Header({ nav = true }: {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link className="block" href="/" aria-label="Cruip">
-              <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              {/*<svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient x1="0%" y1="32.443%" x2="104.18%" y2="50%" id="hlogo-a">
                     <stop stopColor="#FFF" stopOpacity=".299" offset="0%" />
@@ -28,7 +29,10 @@ export default function Header({ nav = true }: {
                   <path fillOpacity=".64" fill="url(#hlogo-a)" d="M16 13 0 23l16 9 16-9z" />
                   <path fill="url(#hlogo-b)" d="M16 0 0 9.25l16 9.25 15.999-9.25z" />
                 </g>
-              </svg>
+              </svg>*/}
+              <div className="shrink-0 mr-4">
+                <Image src={Logo} alt={"IndiHackers Logo"} className="rounded inline-flex" height={32} width={32}/>
+              </div>
             </Link>
           </div>
           {/* Desktop navigation */}

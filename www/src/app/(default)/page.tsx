@@ -13,6 +13,7 @@ import Faqs from '@/src/components/faqs'
 import Cta from '@/src/components/cta'
 
 export default function Home() {
+
   return (
     <>
       <Hero />

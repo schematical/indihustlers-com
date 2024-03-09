@@ -18,23 +18,18 @@ export default function Cta() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
-            <h2 className="h2 font-hkgrotesk">Join the most flexible user-centric platform for teams</h2>
+            <h2 className="h2 font-hkgrotesk">Join A Community of Solo or Independent Hackers and Hustlers</h2>
           </div>
           {/* Buttons */}
           <div className="text-center">
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div data-aos="fade-up" data-aos-delay="100">
                 <Link className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group" href="/signup">
-                  Get Started Free{' '}
+                  Apply Now{' '}
                   <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
                 </Link>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="200">
-                <a className="btn text-slate-300 bg-slate-700 hover:bg-slate-600 border-slate-600 w-full shadow-sm" href="#0">
-                  Read Docs
-                </a>
               </div>
             </div>
           </div>

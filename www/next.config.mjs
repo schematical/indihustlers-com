@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'standalone',
-    assetPrefix: `${process.env.PUBLIC_ASSET_URL}/${process.env.ASSET_HASH}`,
+
     images: {
         unoptimized: true,
     }/*,
@@ -11,5 +11,7 @@ const nextConfig = {
         },
     },*/
 };
-
+if(process.env.PUBLIC_ASSET_URL){
+    nextConfig.assetPrefix =`${process.env.PUBLIC_ASSET_URL}/${process.env.ASSET_HASH}`;
+}
 export default nextConfig;

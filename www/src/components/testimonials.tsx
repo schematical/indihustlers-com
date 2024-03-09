@@ -54,7 +54,7 @@ export default function Testimonials() {
                 <p className="text-slate-500 italic">"The only tool that has the technology to meet our unique and complex needs."</p>
               </div>
               <footer className="text-sm text-slate-500 font-medium">
-                <a className="text-slate-300 hover:text-white transition duration-150 ease-in-out" href="#0">Trustpilot</a> - <span className="text-indigo-500">4.9/5</span>
+                <a className="text-slate-300 hover:text-white transition duration-150 ease-in-out" href="#0">Matt Lea</a> - <span className="text-indigo-500">Schematical.com</span>
               </footer>
             </article>
             {/* 2nd Testimonial */}
