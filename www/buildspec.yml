@@ -57,4 +57,4 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - 'splitGPT/www/**/*'
+    - 'www/**/*'
