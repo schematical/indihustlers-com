@@ -10,13 +10,11 @@ export default async function Hero() {
         { host: 'https://app.posthog.com' }
     );
     const headersList = headers();
-    // console.log("HeadersList:", headersList, headersList.get(PH_COOKIE));
     const distinct_id: string = headersList.get(PH_COOKIE) || getDistinctId();
-    console.log("distinct_id", distinct_id);
-    const flag: string = await client.getFeatureFlag('ih-h1-title', distinct_id) as string;
-    console.log("flag", flag);
+
+    const h1Flag: string = await client.getFeatureFlag('ih-h1-title', distinct_id) as string;
     let h1Text = "Welcome To A Community of Solo or Independent Hackers and Hustlers";
-    switch (flag) {
+    switch (h1Flag) {
         case("test_group_1"):
             h1Text = "Welcome To Our Community of Solo Entrepreneurs";
             break;
@@ -25,6 +23,20 @@ export default async function Hero() {
             break;
         case("test_group_3"):
             h1Text = "Discover A Community of Solo Innovators and Creators";
+            break;
+    }
+
+    const h2Flag: string = await client.getFeatureFlag('ih-h2-subtitle', distinct_id) as string;
+    let h2Text = "Join a community of like minded individuals that get together daily to share the ups and downs of their entrepreneurial journey.";
+    switch (h2Flag) {
+        case("test_group_1"):
+            h2Text = "Connect Daily with Entrepreneurs Sharing the Highs and Lows of Business";
+            break;
+        case("test_group_2"):
+            h2Text = "Daily Support and Inspiration for Your Entrepreneurial Odyssey";
+            break;
+        case("test_group_3"):
+            h2Text = "Daily Gatherings for Entrepreneurs to Share Triumphs and Trials";
             break;
     }
 
@@ -38,7 +50,7 @@ export default async function Hero() {
                             {h1Text}
                         </h1>
                         <p className="text-xl text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">
-                            Join a community of like minded individuals that get together daily to share the ups and downs of their entrepreneurial journey.
+                            {h2Text}
                         </p>
                         <div
                             className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
