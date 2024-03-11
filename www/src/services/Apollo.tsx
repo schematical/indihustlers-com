@@ -26,7 +26,7 @@ const authLink = setContext(async (_, { headers }) => {
     // console.log("Apollo 3 - headers", request);
     return request;
 });
-const graphQLUri = process.env.REACT_APP_GRAPHQL_URI || 'https://dev-v1-us-east-1-api.schematical.com/chaoscrawler'
+const graphQLUri = process.env.NEXT_PUBLIC_GRAPHQL_URI || 'https://dev-v1-us-east-1-api.schematical.com/chaoscrawler'
 const client = new ApolloClient({
     uri: graphQLUri,
     cache: new InMemoryCache(),
