@@ -14,3 +14,4 @@ export function getDistinctId() {
     }
     return phCookie.value;
 }
+

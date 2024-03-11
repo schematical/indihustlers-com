@@ -60,7 +60,7 @@ export default async function Hero() {
                             <div>
                                 <Link
                                     className="btn text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group"
-                                    href="/signup">
+                                    href="/#signup">
                                     Apply Now{' '}
                                     <span
                                         className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">

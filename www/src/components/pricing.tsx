@@ -18,9 +18,9 @@ export default function Pricing() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-hkgrotesk mb-4">Let's find the right plan for you business</h2>
-            <p className="text-xl text-slate-500">
+           {/* <p className="text-xl text-slate-500">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
-            </p>
+            </p>*/}
           </div>
           {/* Pricing tables */}
           <div className="grid md:grid-cols-6">
@@ -232,7 +232,7 @@ export default function Pricing() {
             {/* CTA row */}
             <div className="hidden md:flex flex-col justify-center px-4 md:px-6 py-2 bg-slate-700 bg-opacity-25 md:col-span-3" />
             <div className="flex flex-col justify-center p-4 bg-slate-700 bg-opacity-25 md:border-l border-slate-700 order-1 md:order-none">
-              <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group whitespace-nowrap" href="#0">
+              <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group whitespace-nowrap" href="#signup">
                 Apply
                 <span className="hidden lg:block tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                   -&gt;
@@ -240,7 +240,7 @@ export default function Pricing() {
               </a>
             </div>
             <div className="flex flex-col justify-center p-4 bg-slate-700 bg-opacity-25 md:border-l border-slate-700 order-2 md:order-none">
-              <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group whitespace-nowrap" href="#0">
+              <a className="btn-sm text-white bg-indigo-500 hover:bg-indigo-600 w-full shadow-sm group whitespace-nowrap" href="#signup">
                 Apply
                 <span className="hidden lg:block tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                   -&gt;

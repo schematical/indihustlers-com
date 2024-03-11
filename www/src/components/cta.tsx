@@ -5,7 +5,7 @@ import SignupComponent from "@/src/components/SignupComponent";
 
 export default function Cta() {
     return (
-        <section className="relative border-t border-slate-800">
+        <section id="signup" className="relative border-t border-slate-800">
             {/* Bg gradient: top */}
             <div
                 className="absolute top-0 left-0 right-0 bg-gradient-to-b from-slate-800 to-transparent opacity-25 h-[25rem] pointer-events-none -z-10"
@@ -19,10 +19,10 @@ export default function Cta() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20">
                     {/* Section header */}
-                    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
+                    {/*<div className="max-w-3xl mx-auto text-center pb-12 md:pb-20" data-aos="fade-up">
                         <h2 className="h2 font-hkgrotesk">Join A Community of Solo or Independent Hackers and
                             Hustlers</h2>
-                    </div>
+                    </div>*/}
                     {/* Buttons */}
                     {/*<div className="text-center">
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
