@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from "next/image";
 import Logo from '@/public/images/SchematicalSticker.png'
-export default function Header({ nav = true }: {
+export default function Header({ nav = false }: {
   nav?: boolean
 }) {
   return (

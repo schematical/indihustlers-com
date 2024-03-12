@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Cube',
-  description: 'Page description',
+  title: 'IndiHustlers.com',
+  description: 'A Community of Solo or Independent Hackers and Hustlers',
 }
 
 import Hero from '@/src/components/hero'
