@@ -10,7 +10,7 @@ import FeaturesIcon04 from '@/public/images/features-icon-04.svg'
 
 // Import Swiper
 import Swiper, {Autoplay, Navigation} from 'swiper'
-import 'swiper/swiper.min.css'
+
 
 Swiper.use([Autoplay, Navigation])
 
